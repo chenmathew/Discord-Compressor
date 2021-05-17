@@ -17,7 +17,7 @@ import ffmpeg
 my_secret = os.environ['my secret']
 
 app = Flask('')
-status = itertools.cycle(['fr','sheeesh'])
+status = itertools.cycle(['task1','task2'])
 def compress_video():
     min_audio_bitrate = 32000
     max_audio_bitrate = 256000
@@ -82,7 +82,6 @@ async def on_message(message):
       ydl.download([message.content])
     await message.channel.send(file=File("video.mp4")) 
   if ((message.author.id == 836198988629278720) and (message.content.startswith('File too big.'))):
-    await message.channel.send("mo daijoubu watashi ga kita")
     compress_video()
     await message.channel.send(file=File("output.mp4"))
     os.remove('video.mp4')
