@@ -1,16 +1,11 @@
-from __future__ import unicode_literals
 import discord
 from discord import File
-import asyncio
 from discord.ext import commands, tasks
 import youtube_dl
 import os
 import os.path
 import subprocess
 import ffmpeg
-
-
-my_secret = os.environ['my secret']
 
 def compress_video():
     min_audio_bitrate = 32000
@@ -62,4 +57,4 @@ async def on_message(message):
     if (os.path.isfile('output.mp4')):
         os.remove('output.mp4')
    
-client.run(my_secret)
+client.run('YOURTOKENHERE')
