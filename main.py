@@ -1,6 +1,5 @@
 import discord
 from discord import File
-from discord.ext import commands, tasks
 import youtube_dl
 import os
 import os.path
