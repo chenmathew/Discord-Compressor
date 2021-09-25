@@ -1,2 +1,2 @@
 # Discord-Compressor
-Compresses Tiktoks and Twitter videos to ~8mb
+Discord Bot that compresses Tiktoks and Twitter videos to ~8mb
